@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
-<p>hello</p>
-
-<p>Version 2 testing commit</p>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src=""></script>
+    </head>
+    <p>Testing linking 2 files</p>
 </html>
