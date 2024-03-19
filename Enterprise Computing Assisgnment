@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <script src="script.js"></script>
-    </head>
-    <p>Testing linking 2 files</p>
-</html>
