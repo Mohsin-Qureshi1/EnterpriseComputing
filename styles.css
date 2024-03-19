@@ -1,1 +1,9 @@
+body {
+    margin-left: 0px;
+    background-color: black;
+}
 
+p {
+    background-color: blue;
+    color: black;
+}
