@@ -2,18 +2,24 @@
     padding:0;
     margin:0; 
     border: none;
+    font-family: Helvetica;
 }
 
 .navigation{
-    background-color: #ebefb0;
-    color: black;
+    background-color: #ffffff;
+    color: #735f3d;
     font-size: 16px;
-    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
-.dropbtn, .nav-bthn{
-    background-color: #ebefb0;
-    color: black;
+.dropbtn, .phonebtn{
+    background-color: #ffffff;
+    color: #735f3d;
     padding: 20px;
     font-size: 16px;
     font-family: Arial;
@@ -28,13 +34,14 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f4f7c7;
+    background-color: white;
     min-width: 160px;
+    text-align: left;
 }
   
 
 .dropdown-content a {
-    color: black;
+    color: #63372c;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -44,8 +51,54 @@
     display: block;
 }
 .dropdown-content-btn:hover {
-    background-color: #fcfee7;
+    background-color: lightgray;
 }
-.dropbtn:hover {
-    background-color: beige;
+.dropbtn:hover, .phonebtn:hover{
+    background-color: lightgray;
 }
+
+.phonebtn {
+    border: 3px #63372c solid;
+}
+
+.Logo {
+    width: 150px;
+    height: auto;
+}
+
+.bodytext {
+    margin-top: 60px;
+}
+
+
+.homeslide1 {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+    margin-top: 80px;
+    background-image: url(http://www.extremeeducation.com.au/wp-content/uploads/2017/07/extremee-teacher-handsup-slide02.jpg);
+}
+
+.homebtn {
+    text-align: left;
+}
+
+.navbtns {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.searchlabel {
+    font-size: 40px;
+}
+
+.searchbar {
+    background-color: lightgrey;
+    height: 30px;
+    width: 200px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
