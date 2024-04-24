@@ -5,8 +5,13 @@
     font-family: Helvetica;
 }
 
-.navigation{
+body {
+    overflow-x: hidden;
     background-color: #ffffff;
+}
+
+.navigation{
+    background-color:  #ffffff;
     color: #735f3d;
     font-size: 16px;
     position: fixed;
@@ -15,6 +20,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index:99;
   }
 
 .dropbtn, .phonebtn{
@@ -24,6 +30,7 @@
     font-size: 16px;
     font-family: Arial;
     text-decoration: none;
+    transition: 0.2S ease-in-out;
   }
   
 .dropdown {
@@ -53,7 +60,12 @@
 .dropdown-content-btn:hover {
     background-color: lightgray;
 }
-.dropbtn:hover, .phonebtn:hover{
+.dropbtn:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.phonebtn:hover{
     background-color: lightgray;
 }
 
@@ -71,18 +83,29 @@
 }
 
 
-.homeslide1 {
+.homeslides {
     padding: 30px;
     text-align: center;
     width: 100%;
     height: 300px;
-    background-color: #ffffff;
     margin-top: 80px;
-    background-image: url(http://www.extremeeducation.com.au/wp-content/uploads/2017/07/extremee-teacher-handsup-slide02.jpg);
+    background: linear-gradient(#fff,#9accff );
+}
+
+.homeslide1 {
+    margin-top: 80px;
 }
 
 .homebtn {
     text-align: left;
+}
+.bgrndcol {
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #9accff;
+    margin-left: 0px;
 }
 
 .navbtns {
@@ -92,13 +115,129 @@
 
 .searchlabel {
     font-size: 40px;
+    color: Black;
 }
 
 .searchbar {
-    background-color: lightgrey;
+    background-color: #ffffff;
+    color: #9b9b9b;
     height: 30px;
     width: 200px;
     border: 2px black solid;
     border-radius: 10px;
+    transition: ease-out 0.1s;
 }
 
+.searchbar::placeholder {
+    color: #d2d2d2;
+  }
+
+.searchbar:focus, .searchbar:hover, .searchbar:active {
+    height: 35px;
+    width: 250px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.FloatingIcons {
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.Icon {
+    animation: float 5s infinite alternate-reverse ease-in-out; 
+}
+
+.Icon1 {
+    animation: float 5s infinite  0.5s alternate-reverse ease-in-out; 
+}
+
+.Icon2 {
+    animation: float 5s infinite 1s alternate-reverse ease-in-out; 
+}
+
+.Icons {
+    margin:15px;
+    border-radius: 40px;
+    transition: 0.7s ease-out;
+    color: #2564bb;
+    margin-top: 50px;
+    font-size: 70px;
+    padding: 30px;
+}
+
+.Icons:hover {
+    background-color: #fecd62;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+
+.hometext  {
+    margin-top: 100px;
+    font-size: 35px;
+    font-weight: 80;
+    text-align: center;
+    color: Black;
+}
+
+.hometext p {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 80;
+    text-align: justify;
+    margin:40px 30px;
+    color: Black;
+}
+
+footer {
+    background-color: #2564bb;
+    width: 100%;
+    height: 100px;
+    margin-top: 200px;
+    text-align: left;
+    align-items: top;
+}
+
+.fthenry {
+    margin-top: 10px;
+    margin-left: 40px;
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+}
+
+.fthenry h1{
+    font-size: 20px;
+}
+
+.ftirene {
+    margin-top: 10px;
+    margin-left: 40px;
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+}
+
+.ftirene h1{
+    font-size: 20px;
+}
+
+.ftlocation {
+    margin-top: 10px;
+    margin-left: 40px;
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+}
+
+.ftlocation h1{
+    font-size: 20px;
+}
