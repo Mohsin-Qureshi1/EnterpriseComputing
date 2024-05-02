@@ -284,7 +284,7 @@ footer {
     margin-top: 150px;
     padding: 0px;
     margin-left: 50px;
-    height: 300px;
+    min-height: 400px;
     
 }
 
@@ -296,13 +296,13 @@ footer {
     animation: slidein 1s ease-in-out reverse;
 }
 
-.yeargroupselect {
+#yeargroupselect {
     display: flex;
     margin-top: 20px;
     animation: slidein 1.3s ease-in-out reverse;
 }
 
-.yeargroupselect input{
+#yeargroupselect button{
     margin: 10px;
     background-color: #eee;
     padding: 10px;
@@ -312,6 +312,68 @@ footer {
     transition: 0.5s;
 }
 
-.yeargroupselect input:hover {
+#yeargroupselect button:hover {
     background-color: #fecd62;
 }
+
+#yrM7content {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+
+#yrM8content {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+
+#yrM9content {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+
+#yrM10content {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+
+#yrM11content {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+
+
