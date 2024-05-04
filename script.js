@@ -29,6 +29,7 @@ function defaultSubjects() {
     document.getElementById("MY9").style.backgroundColor = '#eee'
     document.getElementById("MY10").style.backgroundColor = '#eee'
     document.getElementById("MY11").style.backgroundColor = '#eee'
+    document.getElementById("MY12").style.backgroundColor = '#eee'
 
     document.getElementById("yrM7content").style.display = "none"
     document.getElementById("yrM7content").style.animationPlayState = "paused"
@@ -40,6 +41,8 @@ function defaultSubjects() {
     document.getElementById("yrM10content").style.animationPlayState = "paused"
     document.getElementById("yrM11content").style.display = "none"
     document.getElementById("yrM11content").style.animationPlayState = "paused"
+    document.getElementById("yrM12content").style.display = "none"
+    document.getElementById("yrM12content").style.animationPlayState = "paused"
 }
 
 function MY7(){
@@ -76,5 +79,13 @@ function MY11(){
     document.getElementById("yrM11content").style.animationPlayState = "running"
     document.getElementById("MY11").style.backgroundColor = '#fecd62'
 }
+
+function MY12(){
+    defaultSubjects()
+    document.getElementById("yrM12content").style.display = "block"
+    document.getElementById("yrM12content").style.animationPlayState = "running"
+    document.getElementById("MY12").style.backgroundColor = '#fecd62'
+}
+
 
 

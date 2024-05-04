@@ -126,29 +126,6 @@ body {
     color: #000;
 }
 
-.searchbar {
-    background-color: #ffffff;
-    color: #9b9b9b;
-    height: 50px;
-    width: 300px;
-    border: 2px black solid;
-    border-radius: 10px;
-    transition: ease-out 0.1s;
-    font-size: 30px;
-}
-
-.searchbar::placeholder {
-    color: #d2d2d2;
-    font-size: 30px;
-  }
-
-.searchbar:focus, .searchbar:hover, .searchbar:active {
-    height: 60px;
-    width: 400px;
-    border: 2px black solid;
-    border-radius: 10px;
-}
-
 .FloatingIcons {
     text-align: center;
     transition: 0.5s;
@@ -283,9 +260,8 @@ footer {
 .subjectbody {
     margin-top: 150px;
     padding: 0px;
-    margin-left: 50px;
-    min-height: 400px;
-    
+    margin-left: 50px;   
+    height: 1250px;
 }
 
 .subjectbody p {
@@ -376,4 +352,44 @@ footer {
     animation-play-state: paused;
 }
 
+#yrM12content {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
 
+.yrcontenttitle {
+    color: #63372c;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 50px;
+}
+
+.yrcontentbody {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+}
+
+table, th, td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 15px;
+    background-color: #c1cfff;
+}
+
+td {
+    background-color: #eee;
+}
+
+td {
+    text-align: center;
+}
