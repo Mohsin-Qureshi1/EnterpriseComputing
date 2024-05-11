@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 * {
     padding:0;
     margin:0; 
@@ -5,9 +9,6 @@
     cursor:default;
     user-select: none;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
     overflow-x: hidden;
@@ -50,6 +51,7 @@ body {
     min-width: 160px;
     text-align: left;
     font-family: "Ubuntu", sans-serif;
+    transition: 0.2s ease-in-out;
 }
   
 
@@ -59,6 +61,7 @@ body {
     text-decoration: none;
     display: block;
     background-color: white;
+    transition: 0.2s ease-in-out;
   }
   
 .dropdown:hover .dropdown-content {
@@ -83,6 +86,12 @@ body {
 .Logo {
     width: 150px;
     height: auto;
+}
+
+@media (max-width:600px){
+    .navigation {
+        background-color: red;
+    }
 }
 
 .bodytext {
