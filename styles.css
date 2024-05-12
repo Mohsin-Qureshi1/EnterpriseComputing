@@ -83,14 +83,31 @@ body {
     border: 3px #63372c solid;
 }
 
+.navbtns {
+    text-align: right;
+    margin-right: 20px;
+}
+
 .Logo {
     width: 150px;
     height: auto;
 }
 
 @media (max-width:600px){
+    .dropbtn, .phonebtn, .navbtns{ 
+        font-size: 14px;
+        padding: 10px;
+    }
+    .navbtns {
+        text-align: left;
+    }
     .navigation {
-        background-color: red;
+        padding-right: 0px;
+        display: block;
+    }
+    .Logo {
+        width: 100px;
+        height: auto;
     }
 }
 
@@ -125,10 +142,7 @@ body {
     margin-left: 0px;
 }
 
-.navbtns {
-    text-align: right;
-    margin-right: 20px;
-}
+
 
 .searchlabel {
     font-size: 75px;
@@ -140,6 +154,7 @@ body {
     transition: 0.5s;
     margin-top: 100px;
     width: 50%;
+    animation: slidein 1s ease-in-out alternate-reverse;
 }
 
 .Icon {
@@ -185,6 +200,7 @@ body {
     color: Black;
     width: 50%;
     margin-left: 20px;
+    animation: slidein 0.5s ease-out alternate-reverse;
 }
 
 .hometext p {
@@ -195,10 +211,26 @@ body {
     text-align: left;
     margin:40px 30px;
     color: Black;
+    animation: slidein 0.7s ease-in alternate-reverse;
 }
 
 .hometitle {
     font-family: "Rubik", sans-serif;
+}
+
+@media (max-width:600px){
+    .bodytext {
+        display: block;
+    }
+    .hometext {
+        margin-left: 5px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .FloatingIcons{
+        width: 100%;
+    }
 }
 
 footer {
@@ -267,7 +299,7 @@ footer {
 }
 
 .subjectbody {
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 0px;
     margin-left: 50px;   
     height: 1250px;
@@ -401,4 +433,39 @@ td {
 
 td {
     text-align: center;
+}
+
+
+@media (max-width:600px){ 
+    .subjectbody{
+        margin-left: 10px;
+        margin-top: 150px;
+    }
+    .subjecticon {
+        font-size: 30px;
+    }
+    .subjectbody p{
+        font-size: 20px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    #yeargroupselect button {
+        margin-left: 5px;
+    }
+    
+    .yrcontenttitle {
+        color: #63372c;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 40px;
+    }
+    
+    .yrcontentbody {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 20px;
+        width: 400px;
+    }
+    table, th, td {
+        padding: 5px;
+        font-size: 14px;
+    }
 }
