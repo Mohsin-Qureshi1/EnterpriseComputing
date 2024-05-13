@@ -33,7 +33,6 @@ function defaultSubjects() {
     document.getElementById("MY12").style.backgroundColor = '#eee'
     document.getElementById("MY12").style.backgroundColor = '#eee'
 
-
     document.getElementById("yrM7content").style.display = "none"
     document.getElementById("yrM7content").style.animationPlayState = "paused"
     document.getElementById("yrM8content").style.display = "none"

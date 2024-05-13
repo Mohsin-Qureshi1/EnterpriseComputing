@@ -405,6 +405,40 @@ footer {
     animation-play-state: paused;
 }
 
+#physcontent {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+#biocontent {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+#chemcontent {
+    display: none;
+    font-size: 50px;
+    background-color: white;
+    width: 1150px;
+    height: 500px;
+    margin-top: 30px;
+    transition: 1s;
+    animation: slidein 1.3s ease-in-out reverse;
+    animation-play-state: paused;
+}
+
 .yrcontenttitle {
     color: #63372c;
     font-family: "Ubuntu", sans-serif;
@@ -467,5 +501,51 @@ td {
     table, th, td {
         padding: 5px;
         font-size: 14px;
+    }
+}
+
+.profiles {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+}
+
+.rightprofile {
+    text-align: right;
+    margin-right: 50px;
+    animation: slideinopposite 1.3s ease-in-out reverse;
+}
+
+.rightprofile p{
+    margin-left: 30%;
+}
+
+.rightphoto {
+    margin-left: 50px;
+}
+
+.rightphoto img{
+    border-radius: 200px;
+    border: 4px #2564bb solid;
+}
+
+.leftprofile {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    animation: slidein 1.3s ease-in-out reverse;
+}
+
+.leftprofile p{
+    margin-right: 30%;
+}
+
+@keyframes slideinopposite {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50px);
     }
 }
