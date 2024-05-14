@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" type="text/css">
         <link href="graduation-cap-solid.png" rel="icon">
         <title>Extreme Education Contact</title>
@@ -31,7 +32,74 @@
             <button class="phonebtn" onclick="ContactOpen()"><i class="fa-solid fa-phone"></i> Enrol Now</button>
             </div>
         </div>
-        <div class="bodytext">
+        <div class="formtext">
+            <div class="enroltitle"><i class="fa-solid fa-phone"></i> Enrol</div>
+
+        <div class="form">
+            <label class="enrollabel">Subject interested in:</label>
+            <input type="search" placeholder="Subject" class="Forminput" list="Subjectlist">
+                
+            <datalist id="Subjectlist">
+                <option>English</option>
+                <option>Maths</option>
+                <option>Physics</option>
+                <option>Biology</option>
+                <option>Chemistry</option>
+                <option>English Standard</option>
+                <option>English Studies</option>
+                <option>English Advanced</option>
+                <option>English Extension</option>
+                <option>English Extension 2</option>
+                <option>Math Standard</option>
+                <option>Math Advanced</option>
+                <option>Math Extension</option>
+                <option>Math Extension 2</option>
+            </datalist>
+
+            <label class="enrollabel">Grade:</label>
+            <select id="gradeselect" name="grade">
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select><br><br>
+            <label class="enrollabel">Student Full Name:</label>
+            <input type="search" placeholder="Full name" class="Forminput"><br>
+            <label class="enrollabel">Student School:</label>
+            <input type="search" placeholder="School" class="Forminput"> 
+            <button id="Nextbutton" onclick="nextform()">Next</button><br><br>
+        </div>
+            <div id="parentsection">
+            <label class="enrollabel">Parent Name:</label>
+            <input type="search" placeholder="Name" class="Forminput"><br>
+            <label class="enrollabel">Parent Phone Number:</label>
+            <input type="search" placeholder="Phone Number" class="Forminput"><br>
+            <label class="enrollabel">Parent Email:</label>
+            <input type="search" placeholder="email@domain" class="Forminput">
+            <button id="submitbutton" onclick="submitform()">Submit</button>
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
             <footer>
                 <div class="fthenry">
@@ -42,7 +110,7 @@
                 <div class="ftirene">
                     <h1>Mrs Irene</h1>
                     <i class="fa-solid fa-phone"></i> 0450 553 005<br>
-                    Enlish and Biology Tutor
+                    English and Biology Tutor
                     </div>
                 <div class="ftlocation">
                     <h1>Address</h1>

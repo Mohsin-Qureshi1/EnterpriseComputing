@@ -89,5 +89,8 @@ function MY12(){
     document.getElementById("MY12").style.backgroundColor = '#fecd62'
 }
 
-
-
+function nextform() {
+    document.getElementById("parentsection").style.display = "block"
+    document.getElementById("parentsection").style.animationPlayState = "running"
+    document.getElementById("Nextbutton").style.display = "none"
+}
