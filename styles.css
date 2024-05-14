@@ -521,13 +521,17 @@ td {
     margin-left: 30%;
 }
 
+.profiles h1{
+    color: #63372c;
+}
+
 .rightphoto {
     margin-left: 50px;
 }
 
 .rightphoto img{
     border-radius: 200px;
-    border: 4px #2564bb solid;
+    border: 4px #63372c solid;
 }
 
 .leftprofile {
@@ -547,5 +551,53 @@ td {
     }
     100% {
         transform: translateX(-50px);
+    }
+}
+
+.pastsuccess {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    z-index: 100;
+}
+
+.pasttext {
+    margin-top: 50px;
+    font-family: "Rubik", sans-serif;
+}
+
+.pasttext h1 {
+    font-size: 40px;
+    color: #63372c;
+    padding: 20px;
+}
+
+.pasttext h2 {
+    font-size: 30px;
+    color: #2564bb;
+    padding: 10px;
+}
+
+.pasttext span {
+    font-size: 30px;
+    color: #00028e;
+}
+.pasttext p {
+    font-size: 20px;
+    color: #000000;
+    padding: 10px;
+}
+
+.pastsuccess > .pasttext {
+    animation: fadein ease-in-out;
+    animation-timeline: scroll(); 
+}
+
+@keyframes fadein {
+    0% {
+        scale: 0.8; opacity: 0;
+    }
+    100% {
+        scale: 1; opacity: 1;
     }
 }
