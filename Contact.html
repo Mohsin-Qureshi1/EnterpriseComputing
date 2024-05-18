@@ -34,72 +34,68 @@
         </div>
         <div class="formtext">
             <div class="enroltitle"><i class="fa-solid fa-phone"></i> Enrol</div>
-
-        <div class="form">
-            <label class="enrollabel">Subject interested in:</label>
-            <input type="search" placeholder="Subject" class="Forminput" list="Subjectlist">
+            
+        <div class="formcontainer">
+            <div id="forma">
+                <div style="margin-top: 10px;">
+                <label class="enrollabel">Subject interested in:</label>  <br><br><br>
+                <datalist id="Subjectlist">
+                    <option>English</option>
+                    <option>Maths</option>
+                    <option>Physics</option>
+                    <option>Biology</option>
+                    <option>Chemistry</option>
+                    <option>English Standard</option>
+                    <option>English Studies</option>
+                    <option>English Advanced</option>
+                    <option>English Extension</option>
+                    <option>English Extension 2</option>
+                    <option>Math Standard</option>
+                    <option>Math Advanced</option>
+                    <option>Math Extension</option>
+                    <option>Math Extension 2</option>
+                </datalist>
+    
+                <label class="enrollabel">Grade:</label><br><br><br>
                 
-            <datalist id="Subjectlist">
-                <option>English</option>
-                <option>Maths</option>
-                <option>Physics</option>
-                <option>Biology</option>
-                <option>Chemistry</option>
-                <option>English Standard</option>
-                <option>English Studies</option>
-                <option>English Advanced</option>
-                <option>English Extension</option>
-                <option>English Extension 2</option>
-                <option>Math Standard</option>
-                <option>Math Advanced</option>
-                <option>Math Extension</option>
-                <option>Math Extension 2</option>
-            </datalist>
-
-            <label class="enrollabel">Grade:</label>
-            <select id="gradeselect" name="grade">
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-            </select><br><br>
-            <label class="enrollabel">Student Full Name:</label>
-            <input type="search" placeholder="Full name" class="Forminput"><br>
-            <label class="enrollabel">Student School:</label>
-            <input type="search" placeholder="School" class="Forminput"> 
-            <button id="Nextbutton" onclick="nextform()">Next</button><br><br>
-        </div>
-            <div id="parentsection">
-            <label class="enrollabel">Parent Name:</label>
-            <input type="search" placeholder="Name" class="Forminput"><br>
-            <label class="enrollabel">Parent Phone Number:</label>
-            <input type="search" placeholder="Phone Number" class="Forminput"><br>
-            <label class="enrollabel">Parent Email:</label>
-            <input type="search" placeholder="email@domain" class="Forminput">
-            <button id="submitbutton" onclick="submitform()">Submit</button>
+                <label class="enrollabel">Student Full Name:</label><br><br><br><br>
+                
+                <label class="enrollabel">Student School:</label><br><br>
+                
+                
             </div>
-        
+                <div>
+                <input type="search" placeholder="Subject" class="Forminput" list="Subjectlist" id="Subjectinput"><br>
+                <select id="gradeselect" name="grade">
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select><br>
+                <input type="search" placeholder="Full name" class="Forminput" id="Studentname"><br>
+                <input type="search" placeholder="School" class="Forminput" id="schoolname"><br>
+                <button id="Nextbutton" onclick="checkallinputs()">Next</button>
+                </div>
+            </div>
+            <div id="parentsection">
+                <div  style="margin-top: 10px;">
+                    <label class="enrollabel">Parent Name:</label><br><br><br>
+                    <label class="enrollabel">Parent Phone Number:</label><br><br><br>
+                    <label class="enrollabel">Parent Email:</label><br><br><br>
+                </div>
+                <div>
+                    <input type="search" placeholder="Name" class="Forminput" id="parentname">
+                    <input type="number" placeholder="Phone Number" class="Forminput emailinput" id="phone">
+                    <input type="email" placeholder="email@domain" class="Forminput emailinput" id="email"><br>
+                    <button id="submitbutton" onclick="submitform()">Submit</button>
+                </div>
 
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </div>
         </div>
             <footer>
                 <div class="fthenry">
